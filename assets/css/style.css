@@ -1,0 +1,218 @@
+/*--stylesheets--*/
+@import url('utilities.css');
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: var(--backgroundBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: clip;    
+}
+
+.app {  
+    position: relative;  
+    width: 350px;
+    height: 715px;
+    background: url(../img/app-mobile.png); 
+    background-size: cover;       
+}
+
+#music-player {
+    position: absolute;
+    top: .4rem;
+    left: .85rem;
+    width: 333px;
+    height: 700px;
+    background: linear-gradient(var(--carbon), var(--dark-onyx));
+    border-radius: var(--card-radius);    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--animated-background--*/
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;  
+  overflow: hidden;
+  z-index: -1;
+  
+}
+
+/*--floating shapes--*/
+.shape {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--backgroundSpheres1), var(--backgroundSpheres2));
+  border-radius: 50%;
+  opacity: .2;
+  filter: blur(25px);
+  animation: float 12s ease-in-out infinite;
+}
+
+/*--different positions + timings--*/
+.shape:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  animation-duration: 10s;
+}
+
+.shape:nth-child(2) {
+  top: 50%;
+  left: 70%;
+  animation-duration: 14s;
+}
+
+.shape:nth-child(3) {
+  top: 80%;
+  left: 30%;
+  animation-duration: 18s;
+}
+
+.shape:nth-child(4) {
+    top: 90%;
+    right: 20%;
+    animation-duration: 24s;
+}
+
+.shape:nth-child(5) {
+    top: 30%;
+    left: 5%;
+    animation-duration: 30s;
+}
+
+.shape:nth-child(6) {
+    top: 10%;
+    right: 40%;
+    animation-duration: 34s;
+}
+
+.shape:nth-child(7) {
+    top: 60%;
+    left: 45%;
+    animation-duration: 38s;
+}
+
+.shape:nth-child(8) {
+    top: 25%;
+    right: 15%;
+    animation-duration: 43s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--animations--*/
+/*--background--*/
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(150px, -200px) rotate(180deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}

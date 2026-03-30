@@ -1,0 +1,124 @@
+/*--fonts--*/
+
+/*--root--*/
+:root {
+    /*--color-palette--*/
+    --light-blue: #4A798D;
+    --steel: #9CAEB4;
+    --carbon: #181B1E;
+    --dark-onyx: #000000;
+    --cta-color: #46A2B9;
+    --white: #EEEEEE;
+    --backgroundBg: #022439;
+    --backgroundSpheres1: #2396e9;
+    --backgroundSpheres2: #0a72e9;
+    /*--gradients--*/
+
+    /*--typography & fonts--*/
+    --card-radius: 45px;
+}
+
+/*-- globals -- */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-smoothing: antialiased;
+    --webkit-font-smoothing: antialiased;   
+}
+
+::selection {
+	color: none !important;
+	background: none !important;
+}
+
+ul { list-style: none; }
+
+a {	text-decoration: none; }
+
+input,
+button,
+select {
+	border: none;
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;	
+}
+
+
+
+/* -- flex framework -- */
+.flex { display: flex; }
+
+.split {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-column { flex-direction: column; }
+
+.flex-row { flex-direction: row; }
+
+.justify-center { justify-content: center; }
+
+.justify-start { justify-content: flex-start; }
+
+.justify-end { justify-content: flex-end; }
+
+.justify-between { justify-content: space-between; }
+
+.justify-around { justify-content: space-around;}
+
+.items-center {	align-items: center;}
+
+.items-start {align-items: flex-start;}
+
+.items-end {align-items: flex-end;}
+
+.align-between {align-content: space-between;}
+
+.align-around {align-content: space-around;}
+
+.align-center {align-content: center;}
+
+.align-start {align-content: flex-start;}
+
+.align-end {align-content: flex-end;}
+
+.self-center {align-self: center;}
+
+.text-center {text-align: center;}
+
+.flex-grow-2 {flex-grow: 2;}
+
+.flex-grow-3 {flex-grow: 3;}
+
+.flex-grow-4 {flex-grow: 4;}
+
+.flex-shrink-0 {flex-shrink: 0;}
+
+.flex-shrink-1 {flex-shrink: 1;}
+
+.flex-shrink-2 {flex-shrink: 2;}
+
+.gap-1 { gap: .25rem; }
+
+.gap-2 { gap: .5rem; }
+
+.gap-3 { gap: .75rem; }
+
+.gap-4 { gap: 1rem; }
+
+.gap-5 { gap: 1.25rem; }
+
+.gap-6 { gap: 1.5rem; }
+
+.gap-7 { gap: 2rem; }
